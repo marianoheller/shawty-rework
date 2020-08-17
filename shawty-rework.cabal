@@ -1,0 +1,45 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: eeb7c74e109d589a2385d9b8268b02816e03e91b98f99db5fa5117b952156776
+
+name:           shawty-rework
+version:        0.1.0.0
+synopsis:       URI shortener
+description:    Please see the README on GitHub at <https://github.com/githubuser/shawty-rework#readme>
+homepage:       https://github.com/marianoheller/shawty-rework#readme
+bug-reports:    https://github.com/marianoheller/shawty-rework/issues
+author:         Mariano Heller
+maintainer:     example@example.com
+copyright:      2020 Mariano Heller
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/marianoheller/shawty-rework
+
+executable shawty-rework
+  hs-source-dirs: app
+  main-is: Main.hs
+  ghc-options: -threaded
+  build-depends:
+    base >=4.7 && <5
+    , scotty
+    , bytestring
+    , hedis
+    , mtl
+    , network-uri
+    , random
+    , semigroups
+    , text
+    , transformers
+  default-language: Haskell2010
+
